@@ -4,7 +4,8 @@ slug: usb_mount
 description: Mounts USB partitions to HA media directory on boot
 arch:
   - aarch64
-init: true
+boot: auto
+startup: before
 privileged:
   - SYS_ADMIN
 host_dbus: true
