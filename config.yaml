@@ -1,0 +1,25 @@
+name: USB Mount
+version: "2.0"
+slug: usb_mount
+description: Mounts USB partitions to HA media directory on boot
+arch:
+  - aarch64
+init: true
+privileged:
+  - SYS_ADMIN
+host_dbus: true
+host_pid: true
+map:
+  - media:rw
+options:
+  mounts:
+    - label: camera-storage
+      target: camera-storage
+    - label: media-storage
+      target: media-storage
+    - label: private-files
+      target: private-files
+schema:
+  mounts:
+    - label: str
+      target: str
