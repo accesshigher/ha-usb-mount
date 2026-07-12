@@ -1,4 +1,0 @@
-name: USB Mount
-version: "2.0"
-slug: usb_mount
-description: Mounts USB partitions to HA media directory
